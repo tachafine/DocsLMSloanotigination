@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "palm",
+  "name": "LoanOrigination.ca",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1E3A8A",
+    "light": "#3B82F6",
+    "dark": "#172554"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -18,36 +18,119 @@
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "tabs": [
+      {
+        "tab": "Product Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "icon": "rocket",
+            "pages": [
+              "index",
+              "quickstart",
+              "get-started/platform-overview",
+              "get-started/roles-and-access"
+            ]
+          },
+          {
+            "group": "Origination",
+            "icon": "file-signature",
+            "pages": [
+              "origination/overview",
+              "origination/application-intake",
+              "origination/form-builder",
+              "origination/document-management",
+              "origination/workflow-automation",
+              "origination/credit-decisioning",
+              "origination/instant-lending",
+              "origination/loan-programs"
+            ]
+          },
+          {
+            "group": "Borrower Experience",
+            "icon": "user",
+            "pages": [
+              "borrower/overview",
+              "borrower/apply-and-upload",
+              "borrower/status-and-statements",
+              "borrower/secure-messaging",
+              "borrower/business-planning-tools",
+              "borrower/ai-assistant"
+            ]
+          },
+          {
+            "group": "Committee Governance",
+            "icon": "users",
+            "pages": [
+              "committee/overview",
+              "committee/meetings",
+              "committee/packages-and-review",
+              "committee/voting-and-decisions",
+              "committee/audit-and-reporting"
+            ]
+          },
+          {
+            "group": "CRM",
+            "icon": "address-book",
+            "pages": [
+              "crm/overview",
+              "crm/contacts-and-entities",
+              "crm/pipeline-and-referrals",
+              "crm/outreach-and-appointments",
+              "crm/renewals-and-cases"
+            ]
+          },
+          {
+            "group": "Servicing",
+            "icon": "money-check-dollar",
+            "pages": [
+              "servicing/overview",
+              "servicing/disbursement",
+              "servicing/repayment-schedules",
+              "servicing/payments-and-reconciliation",
+              "servicing/arrears-and-collections",
+              "servicing/loan-modifications",
+              "servicing/portfolio-analytics"
+            ]
+          },
+          {
+            "group": "Compliance & Reporting",
+            "icon": "shield-check",
+            "pages": [
+              "compliance/overview",
+              "compliance/kyc-and-identity",
+              "compliance/aml-program",
+              "compliance/funder-impact-reporting",
+              "compliance/reports-and-analytics",
+              "compliance/bilingual-delivery",
+              "compliance/audit-trail"
+            ]
+          },
+          {
+            "group": "Administration",
+            "icon": "gear",
+            "pages": [
+              "admin/security-and-architecture",
+              "admin/integrations",
+              "admin/plans-and-modules",
+              "admin/lender-directory-listing",
+              "admin/loan-program-listing",
+              "admin/implementation"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Contact Sales",
+      "href": "https://loanorigination.ca"
     }
   },
   "contextual": {
@@ -55,18 +138,15 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://loanorigination.ca"
     }
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
   }
 }

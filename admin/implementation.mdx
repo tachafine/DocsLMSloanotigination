@@ -1,0 +1,80 @@
+---
+title: "Implementation and Deliverables"
+sidebarTitle: "Implementation"
+description: "Plan your LoanOrigination.ca rollout with standard and premium implementation options, deliverables, responsibilities, and open configuration items."
+---
+
+LoanOrigination.ca implementations are structured to move your organisation from contract to production with clear phases, documented deliverables, and defined responsibilities. This page covers the service options, what you receive, what your team must provide, and the configuration decisions required before go-live.
+
+## Implementation services
+
+| Service | Duration | Description |
+| --- | --- | --- |
+| Standard implementation | 4 to 6 weeks | Core configuration, data migration, testing, and training for typical community lender deployments. |
+| Premium implementation | 6 to 8 weeks | Complex migration scenarios, additional configuration depth, and extended training coverage. |
+| Additional training sessions | Per session | Extra role-based or refresher training beyond the agreed scope. |
+| Hourly consulting and custom work | Per hour | Ad hoc consulting or custom work outside standard implementation boundaries. |
+
+Pricing for each service is provided per client engagement.
+
+## Deliverables
+
+### Documentation deliverables
+
+- Project charter and kickoff materials
+- Configuration specification document
+- Project plan and timeline
+- Weekly status reports
+- Data migration plan and validation report
+- User guides for administrator, staff, borrower, and committee roles
+- Training materials and quick reference guides
+- User acceptance testing sign off documentation
+
+### Platform deliverables
+
+- Configured production environment with client branding
+- Configured user acceptance testing and sandbox environments
+- User accounts and role configuration
+- Configured credit bureau connectivity
+- Migrated historical data within the agreed migration scope
+
+## Client responsibilities
+
+- Maintain active agreements with any external providers required for configured integrations
+- Provide timely access to source data for migration and to subject matter experts for configuration decisions
+- Complete user acceptance testing within agreed windows
+- Nominate a project owner with authority to approve configuration decisions
+
+<Warning>
+  Delays in third party access or external system availability may affect the delivery timeline.
+</Warning>
+
+## What is out of scope for a standard implementation
+
+<Accordion title="Out of scope items">
+  - Changes to the client's business processes outside the platform
+  - Any feature or functionality not specified in the platform feature description
+  - Any integration not specified in the platform feature description
+  - Custom development or bespoke user interface work beyond standard branding (logo and colour palette)
+  - Penetration testing services, though the provider will remediate vulnerabilities identified by client commissioned testing
+  - Training sessions beyond the agreed training scope
+  - Configuration of full disaster recovery infrastructure, available as an additional service
+  - Creation or updating of the client's internal operational manuals
+  - Business continuity planning services
+</Accordion>
+
+## Open configuration items
+
+The following require your input during the configuration phase:
+
+1. Loan product catalogue: loan types offered, amount ranges, rate structures, terms, payment frequencies, fee schedules, and security requirements
+2. Non-performing loan treatment: classification thresholds, provisioning rules, escalation paths, and write off authorities
+3. Mandatory reporting: required reports, formats, parameters, submission frequencies, and recipients
+4. Instant lending parameters: eligible programs, approval threshold, and rule sets
+5. Committee configuration: membership, quorum rules, scoring criteria, and meeting cadence
+
+## Related topics
+
+- [Subscription plans and modules](/admin/plans-and-modules)
+- [External integrations](/admin/integrations)
+- [Security and platform architecture](/admin/security-and-architecture)

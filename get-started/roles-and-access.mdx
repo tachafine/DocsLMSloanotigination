@@ -1,0 +1,44 @@
+---
+title: "User Roles and Access Control"
+sidebarTitle: "Roles and Access"
+description: "Learn how LoanOrigination.ca manages user access through role-based controls, standard roles, custom roles, and enforced separation of duties for Canadian community lenders."
+---
+
+LoanOrigination.ca uses role-based access control to manage what each user can see and do. The platform provides a set of standard roles that cover common lender positions, and it also lets you create configurable custom roles to match your organisation's structure. Every user action is logged, and separation of duties is enforced to protect sensitive operations.
+
+This page covers the standard roles, how to invite and onboard users, and the controls that keep your system secure.
+
+## Standard roles
+
+The platform ships with five standard roles. You can assign these to users as they join, or you can build custom roles if your team needs more granular permissions.
+
+| Role | Typical responsibilities |
+| --- | --- |
+| Administrator | Manages system configuration, user accounts, role assignments, security settings, and integration setup |
+| Manager | Oversees loan officers and processors, reviews pipeline and workload, and monitors approval rates and cycle times |
+| Officer | Handles application intake, underwriting, credit decisioning, and borrower communication throughout the loan lifecycle |
+| Processor | Supports data entry, document collection and categorisation, file preparation, and status updates |
+| Read only | Views reports, dashboards, and loan records without the ability to edit data or take actions |
+
+<Tip>
+  You can create custom roles beyond the five standard roles. Custom roles are configurable, so you can define exactly which screens, actions, and data each role can access.
+</Tip>
+
+## User invitation and onboarding
+
+New users are invited directly from the platform. During onboarding, you assign a role and the user receives credentials to sign in. Because access is tied to roles from the start, there is no need to manually configure permissions for each new hire.
+
+## Activity logging and session management
+
+The platform records all user activity in an immutable, timestamped log. This includes logins, data changes, document actions, decisions, and access events. You can search and filter the log for audit or regulatory review.
+
+Session management controls how long a user stays signed in and how sessions are handled across devices. For details on multi-factor authentication, single sign-on support, and session timeout settings, see the [Security and Architecture](/admin/security-and-architecture) page.
+
+<Warning>
+  Separation of duties is enforced by the platform. This means a single user cannot perform incompatible actions, such as both approving a loan and recording the disbursement, unless your organisation explicitly configures an exception.
+</Warning>
+
+## Related topics
+
+- [Security and Architecture](/admin/security-and-architecture)
+- [Platform Overview](/get-started/platform-overview)

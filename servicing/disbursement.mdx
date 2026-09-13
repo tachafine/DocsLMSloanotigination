@@ -1,0 +1,37 @@
+---
+title: "Disburse Funds After Conditions Precedent Are Met"
+sidebarTitle: "Disbursement"
+description: "Release loan funds in LoanOrigination.ca once all conditions precedent are satisfied. Confirm agreements, insurance, and security, then approve and book the disbursement."
+---
+
+LoanOrigination.ca controls fund release through a structured disbursement workflow. Before any money moves, your team confirms that every condition precedent attached to the loan agreement is satisfied. Once approved, the system generates payment instructions and books the disbursement to the loan account, which triggers the automatic creation of an amortization schedule.
+
+<Steps>
+  <Step title="Review conditions precedent">
+    Open the loan file in the Servicing module and navigate to the **Disbursement** tab. Verify that all required conditions are marked complete:
+
+    - Signed loan agreement uploaded
+    - Insurance certificate on file (if required)
+    - Security registration confirmed (lien, charge, or guarantee)
+    - Any program-specific conditions (e.g., vendor invoice, proof of enrollment)
+  </Step>
+  <Step title="Approve disbursement">
+    Click **Request Disbursement Approval**. The system routes the request to the configured approver based on the loan program's approval matrix. The approver reviews the checklist and clicks **Approve** or **Reject with reason**.
+  </Step>
+  <Step title="Generate payment instructions">
+    Upon approval, LoanOrigination.ca auto-generates EFT or wire payment instructions using the borrower's bank account details on file. Review the instructions for accuracy, then click **Confirm and Send**.
+  </Step>
+  <Step title="Book to loan account">
+    The disbursement is booked to the loan account as of the effective date. The system immediately generates the full amortization schedule based on the program terms (rate, frequency, term, and structure).
+  </Step>
+</Steps>
+
+<Note>
+  Disbursement cannot proceed if any condition precedent is incomplete or expired. The system blocks the approval step and flags the missing item.
+</Note>
+
+<Tip>
+  You can configure multiple disbursement tranches for construction or milestone-based loans. Each tranche has its own conditions and approval path.
+</Tip>
+
+After disbursement, the loan moves to **Active** status and appears in repayment tracking, portfolio analytics, and the borrower's portal.

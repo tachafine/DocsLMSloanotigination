@@ -1,0 +1,43 @@
+---
+title: "Configure Committee Voting Rules and Capture Decisions"
+sidebarTitle: "Voting & Decisions"
+description: "Configure quorum and majority rules, manage conflict-of-interest recusal, and capture approve, decline, or defer votes that update loan status automatically."
+---
+
+Committee voting in LoanOrigination.ca is designed to match the governance practices of Canadian community lenders. You can configure quorum thresholds, set majority rules, require conflict-of-interest recusal, and capture each member's vote with rationale. Once voting closes, the system updates the loan status automatically and locks the record so it cannot be altered.
+
+<Steps>
+  <Step title="Configure voting rules">
+    Go to **Committee > Settings** and open **Voting Rules**. Set the minimum quorum, such as a simple majority of members or a fixed number. Choose the decision threshold: simple majority, two-thirds, or unanimous. Save the rules at the tenant level or override them per committee.
+  </Step>
+  <Step title="Declare conflicts of interest">
+    Before voting opens, each member reviews the agenda and declares any conflicts. A member with a conflict is marked as recused, removed from quorum calculations, and blocked from viewing or voting on that item. The declaration is timestamped and added to the audit trail.
+  </Step>
+  <Step title="Open the vote">
+    During or after the meeting, the chair or officer opens the vote for an agenda item. Members see the motion, the package summary, and a voting panel with three options: **Approve**, **Decline**, or **Defer**.
+  </Step>
+  <Step title="Cast votes with rationale">
+    Each member selects a decision and enters a rationale. Rationales are required for Decline and Defer votes, and optional for Approve. Members can revise their vote while the poll is open, but every change is logged with a new timestamp.
+  </Step>
+  <Step title="Close the vote and apply the decision">
+    When all members have voted or the chair closes the poll, the system tallies the results. If quorum and the majority threshold are met, the decision is applied automatically: the loan status changes to **Approved**, **Declined**, or **Deferred with Conditions**. If quorum is not met, the vote is void and the item returns to the agenda for the next meeting.
+  </Step>
+</Steps>
+
+<AccordionGroup>
+  <Accordion title="What happens when a loan is deferred?">
+    A deferred loan remains in the pipeline with a status of **Deferred with Conditions**. The officer must address the conditions, update the file, and resubmit the item to a future committee meeting for reconsideration.
+  </Accordion>
+
+  <Accordion title="Can a member change their vote after the poll closes?">
+    No. Once the vote is closed, all ballots and rationales are locked. Any change requires a formal motion to rescind and a new vote at a subsequent meeting.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  Enable **Require Rationale for All Votes** in Committee Settings if your auditor or funder expects written justification on every decision.
+</Tip>
+
+<Note>
+  Vote records are timestamped and immutable. They feed directly into the audit trail and decision registers available to regulators and funders.
+</Note>

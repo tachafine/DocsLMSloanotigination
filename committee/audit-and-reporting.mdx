@@ -1,0 +1,60 @@
+---
+title: "Committee Audit Trail and Reporting for Lenders"
+sidebarTitle: "Audit and Reporting"
+description: "Access complete committee audit trails on LoanOrigination.ca. Review every action, vote, and comment with timestamps, export decision registers, and generate conflict-of-interest reports for auditors and funders."
+---
+
+LoanOrigination.ca captures every committee action in a permanent, tamper-evident audit trail. Whether you need to prove quorum for a funder, satisfy an external auditor, or reconstruct the history behind a loan decision, the system preserves who reviewed what, when they acted, and the outcome of every vote.
+
+## What the audit trail captures
+
+Each committee session generates a detailed log that includes:
+
+- **Reviewer identity**: the name and role of every participant who opened or acted on the application
+- **Timestamps**: exact date and time for each view, comment, vote, and status change
+- **Vote records**: how each member voted, including abstentions and the rationale entered
+- **Comments and annotations**: full text of every comment made during deliberation
+- **Document access**: which files each reviewer opened or downloaded
+- **Conflict-of-interest declarations**: any disclosures filed before or during the session
+
+<Note>
+  All timestamps are recorded in the tenant's configured time zone and stored with Canadian data residency. Logs cannot be edited or deleted by committee members or administrators.
+</Note>
+
+## Exporting decision registers
+
+You can export a complete decision register for any committee session or date range. The export includes a chronological list of motions, votes, and outcomes formatted for auditor review.
+
+<Steps>
+  <Step title="Open the committee session">
+    Navigate to **Committee** > **Sessions** and select the session you want to review.
+  </Step>
+  <Step title="Generate the register">
+    Click **Export** > **Decision Register**. Choose PDF or CSV format.
+  </Step>
+  <Step title="Download and distribute">
+    Save the file locally or send it directly to an auditor or funder contact from the share dialog.
+  </Step>
+</Steps>
+
+## Quorum and conflict-of-interest reports
+
+For governance and compliance, the system can produce two specialized reports:
+
+<CardGroup cols={2}>
+  <Card title="Quorum Record" icon="users">
+    Lists attendees, their roles, and whether quorum was achieved at the start of each vote. Use this to satisfy funder covenants or board governance requirements.
+  </Card>
+
+  <Card title="Conflict-of-Interest Declaration" icon="shield-check">
+    Compiles all disclosures filed by committee members for a given period, including the nature of the conflict and whether the member recused themselves from voting.
+  </Card>
+</CardGroup>
+
+## Accessing reports
+
+Committee chairs and designated compliance officers can access all reports from **Committee** > **Audit and Reporting**. Members with read-only audit roles can view logs but cannot export or share them. If you need additional permissions, contact your tenant administrator.
+
+<Tip>
+  Schedule automated exports of decision registers to your document management system by setting up a recurring export rule in **Settings** > **Integrations** > **Scheduled Exports**.
+</Tip>

@@ -1,0 +1,46 @@
+---
+title: "Central Loan Document Repository and OCR"
+sidebarTitle: "Document Management"
+description: "Store, version, and secure loan documents with OCR extraction, role-based access, audit logging, and automated retention for Canadian lenders."
+---
+
+LoanOrigination.ca provides a central document repository for every loan file, replacing scattered file shares and local drives. Uploaded documents are versioned automatically, access is controlled through role-based permissions, and every view, download, and modification is logged with a timestamp and user identity. Optical Character Recognition (OCR) extracts data from uploaded images and PDFs to autofill application fields, reducing manual data entry and transcription errors.
+
+<Steps>
+  <Step title="Upload or receive documents">
+    Borrowers upload documents through the intake portal, officers attach files during review, and system integrations pull bureau reports or KYC results directly into the file.
+  </Step>
+  <Step title="Review OCR extractions">
+    When OCR identifies structured data in a document, the system suggests field values. Officers confirm or correct each extraction before it is written to the loan record.
+  </Step>
+  <Step title="Manage versions">
+    Each time a document is updated, the repository creates a new version. You can view the full version history, compare changes, and restore an earlier version if needed.
+  </Step>
+  <Step title="Set access permissions">
+    Administrators assign document-level or folder-level permissions based on roles. A collections officer might see payment notices but not the original credit bureau report, while an underwriter sees the full file.
+  </Step>
+  <Step title="Audit and retain">
+    The system logs every access event: who opened, downloaded, modified, or deleted a document, and when. Retention rules enforce automatic archival or deletion schedules aligned with your compliance policy.
+  </Step>
+</Steps>
+
+<Note>
+  OCR extraction supports English and French text. For bilingual documents, the system attempts both languages and presents the higher-confidence result for officer review.
+</Note>
+
+<Tip>
+  Enable automatic document categorization to route uploads into folders such as Identification, Financials, Collateral, and Legal without manual sorting.
+</Tip>
+
+## Access and audit
+
+| Action | Logged details |
+| --- | --- |
+| View | User, timestamp, IP address, document version |
+| Download | User, timestamp, file name, version number |
+| Modify | User, timestamp, field changed, before and after values |
+| Delete | User, timestamp, document name, reason (if required) |
+
+## Retention rules
+
+Retention policies are configurable per document category. You can set rules based on loan status, file age, or regulatory requirement. When a document reaches its retention limit, the system can flag it for review, move it to long-term archive, or delete it according to your policy.

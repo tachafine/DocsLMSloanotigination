@@ -1,0 +1,62 @@
+---
+title: "Audit Trail"
+sidebarTitle: "Audit Trail"
+description: "Search, filter, and export an immutable timestamped record of every user action, data change, decision, and access event in LoanOrigination.ca for audit and regulatory review."
+---
+
+LoanOrigination.ca records an immutable, timestamped log of every user action, data change, decision, and access event across the platform. The audit trail helps you demonstrate compliance, investigate issues, and respond to regulator or funder review requests with confidence.
+
+## What is logged
+
+The audit trail captures the following event types automatically:
+
+| Event type | Examples |
+| --- | --- |
+| User actions | Logins, logouts, password changes, session events |
+| Data changes | Field edits on borrower profiles, loan records, application forms, and compliance files |
+| Decisions | Approval, decline, conditional, override, and committee votes with rationale |
+| Access events | Document views, report exports, profile access, and permission changes |
+| System events | Scheduled report generation, automated status transitions, and integration calls |
+
+Each entry includes the user identity, timestamp, action type, record affected, before and after values where applicable, and the source (web interface, API, or system automation).
+
+## Search and filter the audit trail
+
+<Steps>
+  <Step title="Open the audit trail">
+    Navigate to **Compliance > Audit Trail**.
+  </Step>
+  <Step title="Apply filters">
+    Use the filter panel to narrow by date range, user, event type, record type, or specific loan or borrower identifier.
+  </Step>
+  <Step title="Review results">
+    Browse the filtered list. Click any entry to expand the full detail, including field-level changes and attached notes or rationale.
+  </Step>
+  <Step title="Save a filter set">
+    If you run the same search regularly, save the filter set for quick access from the **Saved Views** list.
+  </Step>
+</Steps>
+
+## Export for audit or regulatory review
+
+You can export audit trail data at any time for internal review, external audit, or regulatory submission.
+
+<Steps>
+  <Step title="Apply your filters">
+    Set the date range and criteria that match the scope of the review request.
+  </Step>
+  <Step title="Select export format">
+    Choose CSV, Excel, or PDF depending on the recipient's requirements.
+  </Step>
+  <Step title="Generate and download">
+    Click **Export**. The file is generated and added to your downloads, with a copy saved to the document repository for record keeping.
+  </Step>
+</Steps>
+
+<Warning>
+  Audit trail entries cannot be edited or deleted by any user, including administrators. This ensures the integrity of the record for regulatory and legal purposes. If you identify a data entry error, correct it in the source record; the correction itself is logged as a separate audit event.
+</Warning>
+
+<Tip>
+  For large export requests, such as a full year of activity, schedule the export during off-peak hours and use the CSV format for faster generation and smaller file size.
+</Tip>

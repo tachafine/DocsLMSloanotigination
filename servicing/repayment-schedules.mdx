@@ -1,0 +1,63 @@
+---
+title: "Generate and Manage Amortized Repayment Schedules"
+sidebarTitle: "Repayment Schedules"
+description: "LoanOrigination.ca generates amortized repayment schedules per program terms. Configure rate, frequency, term, and structure. Borrowers view schedules in the portal, and rescheduling flows support post-approval modifications."
+---
+
+LoanOrigination.ca automatically builds amortized repayment schedules that match the terms of each lending program. You define the rate, payment frequency, term length, and structure once per program, and the system produces a compliant schedule for every approved loan. Borrowers can view their full schedule in the self-service portal, and your servicing team can initiate rescheduling when circumstances require a change.
+
+## Schedule structure and program terms
+
+Each repayment schedule is generated from the program configuration you set during onboarding. The system supports the following structure options:
+
+<CardGroup cols={2}>
+  <Card title="Blended Payments" icon="calculator">
+    Principal and interest are combined into a single, equal payment amount across the full term. This is the most common structure for term loans.
+  </Card>
+
+  <Card title="Interest-Only" icon="percent">
+    The borrower pays only accrued interest for a defined period, followed by a principal repayment phase or balloon payment.
+  </Card>
+
+  <Card title="Balloon Payment" icon="circle-dollar-sign">
+    A large final payment settles the remaining principal. The schedule shows reduced periodic payments with the balloon amount clearly marked on the maturity date.
+  </Card>
+
+  <Card title="Custom Blended" icon="sliders">
+    For programs with unique requirements, you can define custom principal and interest allocation rules per period.
+  </Card>
+</CardGroup>
+
+## Supported payment frequencies
+
+You can configure any of the following frequencies at the program level:
+
+- **Weekly**: 52 payments per year
+- **Bi-weekly**: 26 payments per year
+- **Monthly**: 12 payments per year
+- **Semi-monthly**: 24 payments per year
+- **Quarterly**: 4 payments per year
+
+The system adjusts the amortization calculation and calendar alignment automatically based on the frequency you select.
+
+<Note>
+  All schedules are computed using the day count convention assigned to the program, typically actual/365 for Canadian lending. Verify the convention in **Programs** > **Terms** > **Interest Calculation**.
+</Note>
+
+## Borrower portal view
+
+Once a loan is funded, the borrower can log in to the portal and view their full repayment schedule. The portal displays:
+
+- Payment number, due date, and amount for every installment
+- Principal and interest breakdown per payment
+- Cumulative principal and interest paid to date
+- Remaining balance after each payment
+- Maturity date and final payment amount
+
+## Rescheduling flows
+
+When a borrower's circumstances change, you can initiate a rescheduling flow from the servicing workspace. Rescheduling generates a new schedule while preserving the original terms in the audit trail. Common reasons for rescheduling include payment deferrals, term extensions, and principal restructuring. Each rescheduling request follows the approval workflow configured for your tenant.
+
+<Tip>
+  Before initiating rescheduling, review the borrower's payment history and any active cases. The **Servicing** > **Account Summary** page shows a consolidated view of all open items.
+</Tip>

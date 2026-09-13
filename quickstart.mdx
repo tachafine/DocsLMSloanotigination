@@ -1,47 +1,59 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Quickstart: Set up LoanOrigination.ca"
+sidebarTitle: "Quickstart"
+description: "Configure your workspace, invite your team, define your first loan program, and take a borrower from application to funded in LoanOrigination.ca."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
+This quickstart walks a new lender administrator through the first configuration of LoanOrigination.ca and the end-to-end path of a single loan, from intake to disbursement.
 
 ## Prerequisites
 
-Before you begin, you must have:
+<Note>
+  You need an Administrator account, your organization's branding assets, and any active agreements with external providers (credit bureau, identity verification) you plan to enable.
+</Note>
 
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+## Set up your workspace
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
-
-    ```bash
-    npm install your-package
-    ```
+  <Step title="Sign in as Administrator">
+    Sign in to your production environment using the credentials provided at implementation kickoff. Confirm your workspace name, logo, and colour palette in **Settings > Branding**.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
-
-    ```bash
-    your-cli init
-    ```
+  <Step title="Invite your team">
+    In **Settings > Users**, invite staff and assign standard roles (Administrator, Manager, Officer, Processor, Read only) or a configured custom role. See [Roles and access](/get-started/roles-and-access).
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
-
-    ```bash
-    your-cli start
-    ```
+  <Step title="Define your first loan program">
+    In **Configuration > Loan Programs**, create a loan product with its purpose, amount range, interest rate structure, term, payment frequency, fees, and eligibility rules. See [Loan programs](/origination/loan-programs).
+  </Step>
+  <Step title="Enable integrations">
+    In **Settings > Integrations**, connect the Canadian credit bureau, identity verification service, and notification providers you have agreements with. See [Integrations](/admin/integrations).
   </Step>
 </Steps>
 
-<Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
+## Originate your first loan
 
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
-</Tip>
+<Steps>
+  <Step title="Receive an application">
+    A borrower submits an application through the web portal or mobile app. It appears in your officer queue with all uploaded documents attached. See [Application intake](/origination/application-intake).
+  </Step>
+  <Step title="Underwrite and decide">
+    Review the file, pull credit, run the rules engine, and record a decision with rationale. Applications below the instant lending threshold auto-approve if they satisfy your rule set. See [Credit decisioning](/origination/credit-decisioning).
+  </Step>
+  <Step title="Send to committee">
+    For files that require committee review, publish the package, notify members, and open the vote window. Decisions update loan status directly. See [Committee overview](/committee/overview).
+  </Step>
+  <Step title="Disburse funds">
+    Confirm conditions precedent, approve the disbursement, and generate payment instructions. The amortisation schedule is created automatically. See [Disbursement](/servicing/disbursement).
+  </Step>
+</Steps>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Platform overview" icon="layer-group" href="/get-started/platform-overview">
+    Understand the six functional layers of the platform.
+  </Card>
+
+  <Card title="Borrower experience" icon="user" href="/borrower/overview">
+    Configure the portal and mobile app your applicants will use.
+  </Card>
+</CardGroup>

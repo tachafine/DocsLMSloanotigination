@@ -1,0 +1,42 @@
+---
+title: "Security and Platform Architecture"
+sidebarTitle: "Security"
+description: "Learn how LoanOrigination.ca protects your data with Canadian residency, encryption, RBAC, SOC 2 aligned controls, and resilient cloud architecture."
+---
+
+LoanOrigination.ca is delivered as a managed cloud service. The platform is built to protect sensitive borrower and lender data while meeting Canadian operational and regulatory expectations. This page describes the architecture, security controls, and availability commitments that keep your environment protected.
+
+## Architecture and data protection
+
+| Area | Approach |
+| --- | --- |
+| Application Architecture | Service oriented architecture with containerised deployment, horizontal scaling, and an API gateway fronting all services. |
+| Data Residency | Hosted in Canadian regions on a sovereign capable cloud. All production and backup data remains in Canada. |
+| Data Storage | Relational database for transactional records, object storage for documents, and a separate analytics store for reporting workloads. |
+| Encryption | TLS 1.3 in transit, encryption at rest with managed key services, and secrets management with rotation. |
+| Access Control | Role based access control, single sign on support, multi factor authentication, session controls, and least privilege enforcement. |
+| Controls Framework | Designed to SOC 2 Type II control objectives covering security, availability, and confidentiality. |
+| Availability and Recovery | Automated backup, defined recovery point and recovery time objectives, and multi zone redundancy. Full disaster recovery configuration is available as an additional service. |
+| APIs | Documented REST APIs and webhooks for lender integration with accounting, banking, and internal reporting systems. |
+
+<Note>
+  Specific infrastructure components are implementation details and may be substituted without change to functionality.
+</Note>
+
+## What this means for your organisation
+
+- **Canadian data residency** ensures production and backup data never leaves Canada, supporting provincial and federal expectations for financial data.
+- **Encryption in transit and at rest** protects documents, borrower details, and transaction records from interception or unauthorised access.
+- **RBAC and MFA** let you enforce least privilege across staff, underwriters, committee members, and administrators.
+- **SOC 2 Type II aligned controls** provide a recognised framework for security, availability, and confidentiality that auditors and funders expect.
+- **Multi zone redundancy and automated backups** reduce the risk of data loss, with defined recovery objectives you can reference in your own business continuity planning.
+
+<Tip>
+  If your organisation requires full disaster recovery configuration, ask your account contact about adding this as a service.
+</Tip>
+
+## Related topics
+
+- [External integrations](/admin/integrations)
+- [Subscription plans and modules](/admin/plans-and-modules)
+- [Implementation and deliverables](/admin/implementation)

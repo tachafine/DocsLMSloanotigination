@@ -1,0 +1,66 @@
+---
+title: "Process Payments and Perform Daily Bank Reconciliation"
+sidebarTitle: "Payments and Reconciliation"
+description: "Record and reconcile loan payments on LoanOrigination.ca. Support PAD, EFT, cheque, and manual entry. Payments split across principal, interest, and fees. Exceptions are flagged, and daily reconciliation matches entries against your bank feed."
+---
+
+LoanOrigination.ca handles the full payment lifecycle from intake through to daily reconciliation. You can record payments received via pre-authorized debit, electronic funds transfer, cheque, or manual entry, and the system automatically applies each payment across principal, interest, and fees according to the loan schedule. Any mismatch or exception is flagged for review before you close the day.
+
+## Payment intake methods
+
+The platform supports four payment channels, each configured at the tenant level:
+
+<CardGroup cols={2}>
+  <Card title="Pre-Authorized Debit (PAD)" icon="banknote">
+    Borrowers authorize automatic withdrawals on scheduled dates. The system posts PAD receipts in batch and matches them to the repayment schedule automatically.
+  </Card>
+
+  <Card title="Electronic Funds Transfer (EFT)" icon="arrow-left-right">
+    Borrowers or third parties transfer funds electronically. You upload or import the EFT file, and the system applies each transaction to the correct loan.
+  </Card>
+
+  <Card title="Cheque" icon="receipt">
+    Physical cheques are logged by reference number and bank. The payment is held in a pending state until the cheque clears.
+  </Card>
+
+  <Card title="Manual Entry" icon="pen">
+    For cash, wire, or exceptional situations, a servicing user enters the payment directly. Manual entries require a second approval if they exceed your configured threshold.
+  </Card>
+</CardGroup>
+
+## Payment application and splitting
+
+When a payment is posted, the system splits the amount across the loan components in this order:
+
+1. **Outstanding fees** (late charges, NSF fees, administrative fees)
+2. **Accrued interest** due on the current schedule
+3. **Principal** reduction
+
+If the payment is insufficient to cover all components, the system applies the available amount in the same priority order and flags the shortfall. You can override the split for a specific payment, but the override is logged in the audit trail.
+
+<Note>
+  Payments that do not match the expected schedule amount are flagged as exceptions. Review these in **Servicing** > **Payments** > **Exceptions** before completing daily reconciliation.
+</Note>
+
+## Daily reconciliation workflow
+
+At the end of each business day, reconcile the payments recorded in LoanOrigination.ca against your bank feed or statement.
+
+<Steps>
+  <Step title="Import the bank feed">
+    Upload your daily bank file or connect a direct feed in **Servicing** > **Reconciliation** > **Import**.
+  </Step>
+  <Step title="Run auto-match">
+    Click **Match All** to pair system payments with bank transactions by reference number, amount, and date.
+  </Step>
+  <Step title="Review exceptions">
+    Unmatched items appear in the exceptions list. Investigate each one, apply corrections, or mark for follow-up.
+  </Step>
+  <Step title="Confirm and close">
+    Once all items are resolved, click **Confirm Reconciliation** to lock the day. Locked reconciliations cannot be edited without an administrator override.
+  </Step>
+</Steps>
+
+<Tip>
+  Set up automated alerts for unmatched items above a threshold amount so your accounting team is notified immediately. Configure this in **Settings** > **Notifications** > **Reconciliation Alerts**.
+</Tip>

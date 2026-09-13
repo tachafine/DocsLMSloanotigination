@@ -1,0 +1,53 @@
+---
+title: "No-Code Form Builder for Loan Programs"
+sidebarTitle: "Form Builder"
+description: "Build and manage digital loan application forms with conditional logic, field validation, versioning, and bilingual support for Canadian lending programs."
+---
+
+The Form Builder in LoanOrigination.ca lets administrators create and maintain digital application forms for each loan program without writing code. You choose field types, set validation rules, define conditional visibility, and group questions into sections. Every form version is preserved, so applications started under an older version continue on that version even after you publish changes.
+
+<Steps>
+  <Step title="Create a new form">
+    From the admin panel, select **Form Builder** then **New Form**. Link it to an existing loan program or create the association later.
+  </Step>
+  <Step title="Add sections and fields">
+    Drag sections onto the canvas, then add fields within each section. Available field types include text, number, date, dropdown, checkbox, radio button, file upload, and signature capture.
+  </Step>
+  <Step title="Configure validation and requirements">
+    For each field, set whether it is required, define minimum and maximum values, and choose formatting rules such as currency, phone number, or Social Insurance Number patterns.
+  </Step>
+  <Step title="Set conditional logic">
+    Show or hide fields and sections based on answers to earlier questions. For example, display business financials only when the applicant selects "Business Loan" as the purpose.
+  </Step>
+  <Step title="Publish and version">
+    Click **Publish** to make the form live for new applicants. The system creates a version snapshot. Existing drafts and in-progress applications remain tied to their original version.
+  </Step>
+</Steps>
+
+<Note>
+  Form versioning protects in-flight applications. If a borrower started an application on version 1.2 and you publish 1.3, that borrower continues on 1.2 while new applicants see 1.3.
+</Note>
+
+## Quebec bilingual variants
+
+For organizations serving Quebec, you can maintain parallel French and English versions of the same form. Labels, help text, and validation messages are translated independently. The borrower sees the variant that matches their selected language, and all submitted data maps to the same backend fields regardless of language.
+
+## Field types available
+
+| Type | Use case |
+| --- | --- |
+| Text | Names, addresses, descriptions |
+| Number | Loan amount, income, years in business |
+| Date | Birth date, employment start, fiscal year end |
+| Dropdown | Single-select from a defined list |
+| Checkbox | Multi-select options |
+| Radio | Single-select displayed as buttons |
+| File upload | Tax returns, bank statements, identification |
+| Signature | Electronic consent and agreement |
+
+## Best practices
+
+- Start with a small section and test the borrower experience before adding complexity.
+- Use conditional logic to keep forms short; fewer visible fields reduce abandonment.
+- Review validation rules quarterly to match current program guidelines.
+- Publish changes during low-traffic periods to minimize version fragmentation.

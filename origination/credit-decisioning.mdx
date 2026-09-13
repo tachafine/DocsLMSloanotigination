@@ -1,0 +1,47 @@
+---
+title: "Automated Credit Decisioning with Equifax and TransUnion"
+sidebarTitle: "Credit Decisioning"
+description: "Run rules engine and scorecards against Equifax Canada and TransUnion bureau data. Evaluate DSR, credit bands, and employment tenure for recorded recommendations with full rationale."
+---
+
+LoanOrigination.ca credit decisioning pulls live bureau data from Equifax Canada and TransUnion Canada, evaluates your configured rules, and produces a recorded recommendation with full rationale. Officers review the recommendation, add overrides if needed, and the decision is permanently attached to the loan file.
+
+<Steps>
+  <Step title="Configure the Scorecard">
+    Go to **Origination > Decisioning > Scorecards**. Create or edit a scorecard. Add criteria such as debt service ratio thresholds, credit score bands, employment tenure minimums, and bankruptcy history flags. Assign points or pass/fail logic per criterion.
+  </Step>
+  <Step title="Link Bureau Sources">
+    In the scorecard settings, enable **Equifax Canada**, **TransUnion Canada**, or both. Map the data fields you want evaluated: Beacon score, total tradelines, delinquency counts, public records, and inquiries.
+  </Step>
+  <Step title="Set Decision Thresholds">
+    Define the score or rule outcome that triggers each recommendation tier: Auto-Approve, Approve, Review, or Decline. Add mandatory override reasons for any tier.
+  </Step>
+  <Step title="Run Decision on an Application">
+    Open a loan file and click **Run Decision**. The system fetches bureau data, evaluates rules, and displays the recommendation with a rationale panel showing which rules passed, failed, or were marginal.
+  </Step>
+  <Step title="Record the Decision">
+    The officer accepts the recommendation or selects an override with a documented reason. The final decision, rationale, and bureau snapshot are saved to the file and cannot be altered.
+  </Step>
+</Steps>
+
+<CardGroup cols={2}>
+  <Card title="Hybrid Scoring" icon="scale">
+    Combine bureau metrics with your internal impact score (for example, community benefit, repayment history with your institution) for a balanced view of applicant risk.
+  </Card>
+
+  <Card title="Immutable Records" icon="lock">
+    Bureau snapshots and decision rationale are locked to the file for regulator and auditor review.
+  </Card>
+
+  <Card title="Real-Time Bureau Pull" icon="zap">
+    Data is fetched at the moment of decision, not cached from intake, so evaluations reflect the current credit profile.
+  </Card>
+
+  <Card title="Override Governance" icon="shield-check">
+    Every override requires a reason from a controlled list. Override rates are tracked by officer and branch.
+  </Card>
+</CardGroup>
+
+<Note>
+  Bureau access requires active credentials with Equifax Canada and/or TransUnion Canada. Contact your account manager to verify integration status.
+</Note>

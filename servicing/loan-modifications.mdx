@@ -1,0 +1,71 @@
+---
+title: "Process Loan Modifications and Schedule Updates"
+sidebarTitle: "Loan Modifications"
+description: "Request post-funding loan modifications on LoanOrigination.ca. Defer payments, change rates or terms, restructure principal, or update guarantors. Each change requires approval, generates a new schedule, and preserves prior terms in the audit trail."
+---
+
+After a loan is funded, circumstances may require changes to the original terms. LoanOrigination.ca supports a full range of post-funding modifications, each governed by the approval workflow configured for your tenant. Every modification generates a new repayment schedule and preserves the previous terms in a permanent audit trail so you, your auditors, and your funders can reconstruct the full history of the account.
+
+## Types of loan modifications
+
+The platform supports the following modification categories:
+
+<CardGroup cols={2}>
+  <Card title="Payment Deferral" icon="calendar-x">
+    Postpone one or more scheduled payments. Interest may continue to accrue or be capitalized depending on program settings.
+  </Card>
+
+  <Card title="Rate or Term Change" icon="percent">
+    Adjust the interest rate or extend or shorten the remaining term. The system recalculates the schedule from the effective date.
+  </Card>
+
+  <Card title="Principal Restructuring" icon="scale">
+    Reduce the outstanding principal, convert a portion to a separate note, or re-amortize the balance over a new term.
+  </Card>
+
+  <Card title="Guarantor Change" icon="user-plus">
+    Add, remove, or replace a guarantor. The system triggers a new guarantor review workflow and updates security records.
+  </Card>
+</CardGroup>
+
+## Modification request workflow
+
+All modifications follow a controlled request-and-approval process to prevent unauthorized changes to funded loans.
+
+<Steps>
+  <Step title="Open the loan servicing record">
+    Navigate to **Servicing** > **Loans** and select the account you want to modify.
+  </Step>
+  <Step title="Choose the modification type">
+    Click **Request Modification** and select the category. The system presents the fields relevant to that change type.
+  </Step>
+  <Step title="Enter new terms and justification">
+    Complete the modification form. Provide the proposed new terms and a written justification for audit purposes.
+  </Step>
+  <Step title="Submit for approval">
+    The request routes to the approvers configured for your tenant. You can track status from the loan's modification history tab.
+  </Step>
+  <Step title="Apply the modification">
+    Once approved, click **Apply Modification**. The system generates a new repayment schedule and notifies the borrower.
+  </Step>
+</Steps>
+
+<Note>
+  The number and type of approvers required depend on the modification category and amount. Configure approval rules in **Settings** > **Servicing** > **Modification Policies**.
+</Note>
+
+## Audit trail and schedule history
+
+Every modification is recorded in the loan's permanent history. The audit entry includes:
+
+- The original and new terms
+- The user who requested the change
+- The approvers who authorized it
+- The timestamp of application
+- The justification text entered at submission
+
+Borrowers can view their current schedule in the portal. Previous schedules are not visible to the borrower but remain accessible to servicing staff and auditors.
+
+<Tip>
+  Before requesting a modification, review the borrower's payment history and any active collection or case files. The **Account Summary** sidebar shows all open items at a glance.
+</Tip>

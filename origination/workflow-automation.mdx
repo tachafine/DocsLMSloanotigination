@@ -1,0 +1,47 @@
+---
+title: "Configure Automated Loan Approval Workflows and SLA Alerts"
+sidebarTitle: "Workflow Automation"
+description: "Build configurable approval chains with task assignments, SLA escalations, and automated reminders. Track pipeline bottlenecks and audit every status transition."
+---
+
+LoanOrigination.ca workflow automation replaces manual handoffs with configurable approval chains that route applications to the right officers, escalate stalled files, and log every status change for audit. Managers see real-time pipeline views and identify bottlenecks before they breach SLAs.
+
+<Steps>
+  <Step title="Open Workflow Builder">
+    From the **Origination** menu, select **Workflows** then click **New Workflow**. Name the workflow and choose the loan program it applies to.
+  </Step>
+  <Step title="Add Stages and Assignees">
+    Click **Add Stage** for each step (for example, Intake Review, Credit Analysis, Manager Approval). Assign individual officers, roles, or queues. Set whether a stage requires one approver or unanimous consensus.
+  </Step>
+  <Step title="Set SLA and Escalation Rules">
+    For each stage, enter the SLA in business hours. Choose the escalation path: notify the assigned officer first, then their manager, then a designated backup. Add reminder intervals before escalation.
+  </Step>
+  <Step title="Configure Notifications">
+    Select notification channels per event: new assignment, SLA warning, escalation, or final decision. Channels include in-app alerts, email, and SMS. Customize message templates in English and French.
+  </Step>
+  <Step title="Publish and Monitor">
+    Toggle the workflow to **Active**. Use the **Pipeline Dashboard** to view files by stage, average time-in-stage, and files approaching SLA breach.
+  </Step>
+</Steps>
+
+<CardGroup cols={2}>
+  <Card title="Pipeline Visibility" icon="eye">
+    Managers see cards per stage with officer load, aging indicators, and SLA countdowns.
+  </Card>
+
+  <Card title="Audit Trail" icon="file-text">
+    Every status transition records who acted, when, and why. Export trails for compliance reviews.
+  </Card>
+
+  <Card title="Smart Routing" icon="route">
+    Route by amount, product, risk band, or officer specialization. Reassign automatically during absences.
+  </Card>
+
+  <Card title="Bilingual Alerts" icon="languages">
+    Notification templates support English and French to match applicant and staff preferences.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Set a buffer reminder at 80 percent of SLA time so officers can act before escalation triggers.
+</Tip>

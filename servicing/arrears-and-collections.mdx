@@ -1,0 +1,76 @@
+---
+title: "Manage Arrears Aging, Collections, and Write-Offs"
+sidebarTitle: "Arrears and Collections"
+description: "Track loan arrears by aging bucket on LoanOrigination.ca. Automate bilingual borrower reminders, manage collection cases, record promise-to-pay agreements, and process write-offs with committee approval and provisions reporting."
+---
+
+When a borrower misses a scheduled payment, LoanOrigination.ca moves the account into arrears tracking and triggers the collections workflow you have configured for your tenant. The system ages delinquencies into standard buckets, sends automated bilingual reminders, and supports full collection case management from first contact through to write-off and provisions reporting.
+
+## Arrears aging buckets
+
+The system classifies missed payments into aging buckets that align with Canadian lending standards and your funder requirements:
+
+<CardGroup cols={3}>
+  <Card title="30 Days" icon="calendar">
+    First missed payment or partial payment. The account is flagged for follow-up and automated reminders begin.
+  </Card>
+
+  <Card title="60 Days" icon="calendar-clock">
+    Second consecutive missed payment. Escalation rules activate, and the case may be reassigned to a senior collections officer.
+  </Card>
+
+  <Card title="90+ Days" icon="alert-triangle">
+    Serious delinquency. The account is eligible for formal collection action, legal referral, or write-off review depending on your program policy.
+  </Card>
+</CardGroup>
+
+You can customize bucket thresholds and associated actions per program in **Settings** > **Servicing** > **Arrears Policies**.
+
+## Automated borrower reminders
+
+The system sends reminders automatically when an account enters an arrears bucket. You configure the timing, channel, and message template for each stage.
+
+<Steps>
+  <Step title="Configure reminder rules">
+    Go to **Settings** > **Communications** > **Arrears Reminders**. Select the aging bucket and choose email, SMS, or both.
+  </Step>
+  <Step title="Set bilingual templates">
+    Enter the English and French message templates. Use merge fields for borrower name, amount due, and days overdue.
+  </Step>
+  <Step title="Enable and schedule">
+    Set the send time and frequency. The system queues reminders automatically when an account qualifies.
+  </Step>
+</Steps>
+
+<Note>
+  All reminders are sent from Canadian infrastructure to maintain data residency. Opt-out requests are tracked per borrower and respected automatically.
+</Note>
+
+## Collection case management
+
+When automated reminders do not resolve the delinquency, you can open a formal collection case. Each case includes:
+
+- **Borrower contact history**: log of every call, email, letter, and visit
+- **Promise-to-pay tracking**: record payment commitments, due dates, and whether the borrower fulfilled them
+- **Resolution notes**: free-text entries with timestamps and author identity for auditability
+- **Escalation history**: record of case transfers and supervisor reviews
+
+## Write-off workflow
+
+Accounts that cannot be collected are eligible for write-off. The process requires committee approval to protect against unauthorized loss recognition.
+
+<Steps>
+  <Step title="Initiate write-off review">
+    From the collection case, click **Request Write-Off**. The system generates a summary of aging, collection efforts, and remaining balance.
+  </Step>
+  <Step title="Committee review">
+    The request enters the standard committee workflow. Members review the case file, vote, and record comments.
+  </Step>
+  <Step title="Post write-off">
+    Once approved, the system marks the loan as written off, stops further interest accrual, and generates the provisions reporting entry.
+  </Step>
+</Steps>
+
+<Tip>
+  Run the **Provisions Report** monthly from **Servicing** > **Reports** > **Provisions** to support your financial statements and funder reporting requirements.
+</Tip>

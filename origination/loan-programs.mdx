@@ -1,0 +1,50 @@
+---
+title: "Create and Manage Loan Product Programs and Eligibility"
+sidebarTitle: "Loan Programs"
+description: "Build your product catalog with purpose, amount ranges, rate structures, terms, fees, and eligibility rules. Programs drive intake forms and decisioning automatically."
+---
+
+Loan programs are the product catalog at the heart of LoanOrigination.ca. Each program defines what you lend, to whom, on what terms, and with what documentation. When an applicant selects a program on the intake form, the system automatically surfaces the right fields, eligibility checks, and decisioning rules.
+
+<Steps>
+  <Step title="Open the Program Catalog">
+    Go to **Origination > Programs** and click **New Program**. Enter the program name in English and French, select the funding source, and assign a program code for reporting.
+  </Step>
+  <Step title="Define Purpose and Amount Range">
+    Choose the loan purpose category: working capital, equipment purchase, startup, housing, or custom. Set the minimum and maximum principal amount. The intake form enforces these bounds automatically.
+  </Step>
+  <Step title="Set Rate Structure and Term">
+    Select fixed, variable, or tiered interest. For tiered rates, define the balance bands and corresponding rates. Enter the minimum and maximum term in months and the allowed payment frequency: monthly, biweekly, or quarterly.
+  </Step>
+  <Step title="Add Fees and Disbursement Rules">
+    Configure application fees, administration fees, and late penalties as flat amounts or percentages. Choose whether fees are capitalized or collected upfront. Set the disbursement schedule: lump sum, milestone-based, or revolving.
+  </Step>
+  <Step title="Build Eligibility and Document Rules">
+    Add eligibility criteria: applicant type, geography, industry code, or credit score minimum. Link the required documents (business plan, financial statements, guarantor agreement) so the intake checklist updates dynamically.
+  </Step>
+  <Step title="Link Decisioning and Publish">
+    Attach the scorecard and workflow that apply to this program. Toggle the program to **Active** to make it available on the public intake portal and in officer-created files.
+  </Step>
+</Steps>
+
+<CardGroup cols={2}>
+  <Card title="Bilingual Product Names" icon="languages">
+    Program names, descriptions, and required document labels display in English or French based on the applicant's language preference.
+  </Card>
+
+  <Card title="Dynamic Intake Forms" icon="form-input">
+    The intake portal adapts fields, document requests, and help text to the selected program so applicants only see what is relevant.
+  </Card>
+
+  <Card title="Funding Source Tracking" icon="landmark">
+    Each program is tied to a funding source for portfolio reporting, drawdown tracking, and compliance with program-specific covenants.
+  </Card>
+
+  <Card title="Version Control" icon="git-branch">
+    Edit and save new versions of a program without disrupting in-flight applications. Activate the new version when ready.
+  </Card>
+</CardGroup>
+
+<Note>
+  Changes to amount ranges, rates, or eligibility on an active program do not retroactively affect files already in progress. Use version control to manage policy updates cleanly.
+</Note>

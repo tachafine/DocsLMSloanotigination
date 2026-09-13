@@ -1,0 +1,50 @@
+---
+title: "Set Up Straight-Through Instant Lending and Auto-Disbursement"
+sidebarTitle: "Instant Lending"
+description: "Enable automatic approval and disbursement for low-risk applications that pass all rules. Configure amount thresholds, product scope, KYC requirements, and manual fallback routing."
+---
+
+Instant lending in LoanOrigination.ca lets you auto-approve and disburse qualifying applications without officer touch. You set a configurable threshold, product scope, and required KYC status; applications that satisfy every rule move straight to funding, while anything that fails routes to manual underwriting automatically.
+
+<Steps>
+  <Step title="Open Instant Lending Settings">
+    Navigate to **Origination > Decisioning > Instant Lending**. Toggle the feature on for your tenant.
+  </Step>
+  <Step title="Set Amount and Product Scope">
+    Enter the maximum loan amount eligible for instant approval. Select which loan programs or products are included. You can run instant lending for micro-loans while requiring manual review for commercial term loans.
+  </Step>
+  <Step title="Define Required KYC Status">
+    Choose the FINTRAC KYC/AML verification level an applicant must reach before instant lending activates. Options include identity verified, PEP/sanctions screened, and beneficial ownership confirmed.
+  </Step>
+  <Step title="Configure Rule Pass Criteria">
+    Select the scorecard and decision tier that qualifies for auto-approval. Typically this is the highest tier with zero marginal or failed rules. Require a minimum internal impact score if hybrid scoring is enabled.
+  </Step>
+  <Step title="Set Disbursement and Fallback">
+    Choose the funding source and disbursement method for approved instant loans. Define the fallback queue where files failing any rule are routed for manual underwriting with a pre-populated reason.
+  </Step>
+  <Step title="Review the Audit Log">
+    Instant decisions are recorded with full rationale, bureau snapshot, and KYC status. Use the **Instant Lending Report** to monitor auto-approval volume, average time to disburse, and fallback rates.
+  </Step>
+</Steps>
+
+<CardGroup cols={2}>
+  <Card title="Zero-Touch Disbursement" icon="bolt">
+    Funds move automatically upon auto-approval when linked to an approved funding source and disbursement schedule.
+  </Card>
+
+  <Card title="Safe Fallback" icon="arrow-right-left">
+    Any rule failure, marginal score, or missing KYC document routes the file to a human underwriter with context preserved.
+  </Card>
+
+  <Card title="Threshold Control" icon="sliders">
+    Adjust the amount cap and product list as your risk appetite or portfolio performance changes.
+  </Card>
+
+  <Card title="Compliance Ready" icon="clipboard-check">
+    Every instant decision includes a full audit trail for regulator review and internal risk reporting.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Start with a conservative amount threshold and a narrow product scope. Expand after reviewing fallback reasons and portfolio performance for 30 to 60 days.
+</Tip>
