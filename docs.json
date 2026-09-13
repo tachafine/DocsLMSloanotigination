@@ -1,10 +1,10 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "maple",
   "name": "LoanOrigination.ca",
   "colors": {
     "primary": "#1E3A8A",
-    "light": "#3B82F6",
+    "light": "#60A5FA",
     "dark": "#172554"
   },
   "favicon": "/favicon.svg",
@@ -107,6 +107,16 @@
             ]
           },
           {
+            "group": "Directory",
+            "icon": "map-location-dot",
+            "pages": [
+              "directory/overview",
+              "directory/community-futures",
+              "directory/credit-unions",
+              "directory/indigenous-financial-institutions"
+            ]
+          },
+          {
             "group": "Administration",
             "icon": "gear",
             "pages": [
@@ -123,8 +133,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo.png"
   },
   "navbar": {
     "primary": {
@@ -149,5 +159,11 @@
   "styling": {
     "eyebrows": "breadcrumbs",
     "codeblocks": {}
+  },
+  "background": {
+    "color": {
+      "light": "#F0F6FF",
+      "dark": "#0B1220"
+    }
   }
 }
