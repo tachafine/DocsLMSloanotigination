@@ -3,9 +3,9 @@
   "theme": "maple",
   "name": "LoanOrigination.ca",
   "colors": {
-    "primary": "#1E3A8A",
-    "light": "#60A5FA",
-    "dark": "#172554"
+    "primary": "#2743C9",
+    "light": "#2B4EE6",
+    "dark": "#1E3399"
   },
   "favicon": "/favicon.svg",
   "navigation": {
