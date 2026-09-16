@@ -15,114 +15,81 @@
         "pages": ["index", "quickstart"]
       }
     ],
-    "tabs": [
+    "languages": [
       {
-        "tab": "Product Guide",
-        "groups": [
+        "language": "en",
+        "default": true,
+        "tabs": [
           {
-            "group": "Get Started",
-            "icon": "rocket",
-            "pages": [
-              "index",
-              "quickstart",
-              "get-started/platform-overview",
-              "get-started/roles-and-access"
-            ]
-          },
+            "tab": "Product Guide"
+          }
+        ]
+      },
+      {
+        "language": "fr-CA",
+        "tabs": [
           {
-            "group": "Origination",
-            "icon": "file-signature",
-            "pages": [
-              "origination/overview",
-              "origination/application-intake",
-              "origination/form-builder",
-              "origination/document-management",
-              "origination/workflow-automation",
-              "origination/credit-decisioning",
-              "origination/instant-lending",
-              "origination/loan-programs"
-            ]
-          },
-          {
-            "group": "Borrower Experience",
-            "icon": "user",
-            "pages": [
-              "borrower/overview",
-              "borrower/apply-and-upload",
-              "borrower/status-and-statements",
-              "borrower/secure-messaging",
-              "borrower/business-planning-tools",
-              "borrower/ai-assistant"
-            ]
-          },
-          {
-            "group": "Committee Governance",
-            "icon": "users",
-            "pages": [
-              "committee/overview",
-              "committee/meetings",
-              "committee/packages-and-review",
-              "committee/voting-and-decisions",
-              "committee/audit-and-reporting"
-            ]
-          },
-          {
-            "group": "CRM",
-            "icon": "address-book",
-            "pages": [
-              "crm/overview",
-              "crm/contacts-and-entities",
-              "crm/pipeline-and-referrals",
-              "crm/outreach-and-appointments",
-              "crm/renewals-and-cases"
-            ]
-          },
-          {
-            "group": "Servicing",
-            "icon": "money-check-dollar",
-            "pages": [
-              "servicing/overview",
-              "servicing/disbursement",
-              "servicing/repayment-schedules",
-              "servicing/payments-and-reconciliation",
-              "servicing/arrears-and-collections",
-              "servicing/loan-modifications",
-              "servicing/portfolio-analytics"
-            ]
-          },
-          {
-            "group": "Compliance & Reporting",
-            "icon": "shield-check",
-            "pages": [
-              "compliance/overview",
-              "compliance/kyc-and-identity",
-              "compliance/aml-program",
-              "compliance/funder-impact-reporting",
-              "compliance/reports-and-analytics",
-              "compliance/bilingual-delivery",
-              "compliance/audit-trail"
-            ]
-          },
-          {
-            "group": "Directory",
-            "icon": "map-location-dot",
-            "pages": [
-              "directory/overview",
-              "directory/community-futures",
-              "directory/credit-unions",
-              "directory/indigenous-financial-institutions"
-            ]
-          },
-          {
-            "group": "Administration",
-            "icon": "gear",
-            "pages": [
-              "admin/security-and-architecture",
-              "admin/integrations",
-              "admin/plans-and-modules",
-              "admin/lender-directory-listing",
-              "admin/loan-program-listing",
-              "admin/implementation"
+            "tab": "Guide du produit",
+            "groups": [
+              {
+                "group": "Démarrage",
+                "icon": "rocket",
+                "pages": [
+                  "fr-ca/index",
+                  "fr-ca/quickstart",
+                  "fr-ca/get-started/platform-overview",
+                  "fr-ca/get-started/roles-and-access"
+                ]
+              },
+              {
+                "group": "Octroi",
+                "icon": "file-signature",
+                "pages": [
+                  "fr-ca/origination/overview"
+                ]
+              },
+              {
+                "group": "Expérience emprunteur",
+                "icon": "user",
+                "pages": [
+                  "fr-ca/borrower/overview"
+                ]
+              },
+              {
+                "group": "Gouvernance du comité",
+                "icon": "users",
+                "pages": [
+                  "fr-ca/committee/overview"
+                ]
+              },
+              {
+                "group": "GRC",
+                "icon": "address-book",
+                "pages": [
+                  "fr-ca/crm/overview"
+                ]
+              },
+              {
+                "group": "Service et portefeuille",
+                "icon": "money-check-dollar",
+                "pages": [
+                  "fr-ca/servicing/overview"
+                ]
+              },
+              {
+                "group": "Conformité et rapports",
+                "icon": "shield-check",
+                "pages": [
+                  "fr-ca/compliance/overview"
+                ]
+              },
+              {
+                "group": "Répertoire",
+                "icon": "map-location-dot",
+                "pages": [
+                  "fr-ca/directory/overview"
+                ]
+              }
             ]
           }
         ]
