@@ -1,3 +1,63 @@
 ---
-title: "platform-overview"
+title: "Vue d'ensemble : couches fonctionnelles"
+sidebarTitle: "Vue de la plateforme"
+description: "Explorez les six couches fonctionnelles de LoanOrigination.ca, une plateforme infonuagique qui regroupe le cycle de vie complet du prêt pour les prêteurs communautaires canadiens."
 ---
+
+LoanOrigination.ca est une plateforme infonuagique multilocataire d'octroi et de gestion de prêts conçue pour les prêteurs communautaires canadiens. Elle dessert les Sociétés d'aide au développement des collectivités, les coopératives de crédit, les institutions financières autochtones et les autres prêteurs communautaires actifs au Canada. La plateforme couvre le cycle de vie complet du prêt, de l'admission et de la souscription jusqu'au déboursement, au service, au remboursement, au recouvrement et à la clôture.
+
+En regroupant des fonctions habituellement dispersées entre chiffriers, lecteurs partagés, courriels, outils de conseil autonomes et rapports manuels, LoanOrigination.ca vous fournit un seul système auditable comme source de vérité.
+
+## Problèmes opérationnels résolus
+
+LoanOrigination.ca répond à quatre défis récurrents pour les prêteurs :
+
+1. **Flux de travail fragmentés entre outils déconnectés** : les demandes, documents, décisions et communications sont éparpillés dans plusieurs systèmes.
+2. **Rapports réglementaires et bailleurs manuels et laborieux** : les données doivent être compilées et mises en forme manuellement à chaque cycle de rapport.
+3. **Absence de libre-service pour l'emprunteur** : sans portail emprunteur, les appels et courriels entrants sur l'état des dossiers et les relevés accaparent le personnel.
+4. **Revues du comité effectuées hors du système de référence** : les décisions prises dans des outils externes exigent une ressaisie manuelle dans le dossier de prêt.
+
+## Six couches fonctionnelles
+
+La plateforme est organisée en six couches fonctionnelles. Chaque couche est native à la plateforme et fonctionne sur un modèle de données unique et partagé.
+
+| Couche | Fonction |
+| --- | --- |
+| Expérience emprunteur | Portail Web et application mobile pour les requérants et emprunteurs actifs |
+| Cœur d'octroi | Admission des demandes, flux de travail, souscription, décision et gestion documentaire |
+| Gouvernance du comité | Gestion des réunions, distribution des dossiers, vote, procès-verbaux et audit des décisions |
+| Gestion des relations | Fiches de contacts et d'entités, pipeline, références, communication et renouvellements |
+| Service et portefeuille | Déboursement, échéanciers de remboursement, arriérés, restructuration et rapports de portefeuille |
+| Conformité et rapports | KYC/LBA, rapports d'impact aux bailleurs, prestation bilingue, analytique et piste d'audit |
+
+<Note>
+  Les six couches sont livrées nativement par la plateforme. Il n'y a pas d'abonnement distinct pour la fonctionnalité du comité, et tous les outils destinés aux emprunteurs sont inclus dès la première version.
+</Note>
+
+## Explorer chaque couche
+
+<CardGroup cols={3}>
+  <Card title="Cœur d'octroi" icon="file-plus" href="/fr-ca/origination/overview">
+    Admission, souscription, décision et gestion documentaire
+  </Card>
+
+  <Card title="Expérience emprunteur" icon="users" href="/fr-ca/borrower/overview">
+    Portail et application mobile pour requérants et emprunteurs
+  </Card>
+
+  <Card title="Gouvernance du comité" icon="gavel" href="/fr-ca/committee/overview">
+    Réunions, dossiers, vote et audit
+  </Card>
+
+  <Card title="Gestion des relations" icon="handshake" href="/fr-ca/crm/overview">
+    Contacts, pipeline, références et renouvellements
+  </Card>
+
+  <Card title="Service et portefeuille" icon="chart-pie" href="/fr-ca/servicing/overview">
+    Déboursement, remboursement, arriérés et analytique
+  </Card>
+
+  <Card title="Conformité et rapports" icon="shield-check" href="/fr-ca/compliance/overview">
+    KYC/LBA, rapports d'impact, prestation bilingue et audit
+  </Card>
+</CardGroup>

@@ -1,3 +1,44 @@
 ---
-title: "roles-and-access"
+title: "Rôles utilisateurs et contrôle d'accès"
+sidebarTitle: "Rôles et accès"
+description: "Apprenez comment LoanOrigination.ca gère l'accès des utilisateurs par contrôles fondés sur les rôles, rôles standards, rôles personnalisés et séparation des tâches pour les prêteurs communautaires canadiens."
 ---
+
+LoanOrigination.ca utilise un contrôle d'accès fondé sur les rôles pour gérer ce que chaque utilisateur peut voir et faire. La plateforme fournit un ensemble de rôles standards qui couvrent les postes courants chez un prêteur, et vous permet aussi de créer des rôles personnalisés configurables adaptés à la structure de votre organisation. Chaque action est journalisée, et la séparation des tâches est appliquée pour protéger les opérations sensibles.
+
+Cette page couvre les rôles standards, la façon d'inviter et d'intégrer les utilisateurs, et les contrôles qui protègent votre système.
+
+## Rôles standards
+
+La plateforme est livrée avec cinq rôles standards. Vous pouvez les attribuer aux utilisateurs à leur arrivée, ou créer des rôles personnalisés si votre équipe a besoin d'autorisations plus fines.
+
+| Rôle | Responsabilités typiques |
+| --- | --- |
+| Administrateur | Gère la configuration système, les comptes utilisateurs, l'attribution des rôles, les paramètres de sécurité et la configuration des intégrations |
+| Gestionnaire | Supervise les agents et commis de prêt, suit le pipeline et la charge de travail, surveille les taux d'approbation et les délais |
+| Agent | Traite l'admission des demandes, la souscription, la décision de crédit et la communication avec l'emprunteur tout au long du cycle de vie du prêt |
+| Commis | Soutient la saisie de données, la collecte et la catégorisation des documents, la préparation des dossiers et les mises à jour d'état |
+| Lecture seule | Consulte les rapports, tableaux de bord et dossiers de prêt sans possibilité de modifier des données ni de poser d'actions |
+
+<Tip>
+  Vous pouvez créer des rôles personnalisés au-delà des cinq rôles standards. Les rôles personnalisés sont configurables : vous définissez exactement les écrans, actions et données auxquels chaque rôle peut accéder.
+</Tip>
+
+## Invitation et intégration des utilisateurs
+
+Les nouveaux utilisateurs sont invités directement depuis la plateforme. À l'intégration, vous attribuez un rôle et l'utilisateur reçoit ses identifiants de connexion. Comme l'accès est lié aux rôles dès le départ, il n'est pas nécessaire de configurer manuellement les autorisations pour chaque nouvelle recrue.
+
+## Journalisation d'activité et gestion des sessions
+
+La plateforme consigne toutes les activités des utilisateurs dans un journal immuable et horodaté. Cela inclut les connexions, les modifications de données, les actions documentaires, les décisions et les événements d'accès. Vous pouvez rechercher et filtrer le journal pour un audit ou une revue réglementaire.
+
+La gestion des sessions contrôle la durée de connexion d'un utilisateur et la manière dont les sessions sont traitées entre appareils. Pour plus de détails sur l'authentification multifacteur, la prise en charge de l'authentification unique et les délais d'expiration, consultez la page [Sécurité et architecture](/fr-ca/admin/security-and-architecture).
+
+<Warning>
+  La séparation des tâches est appliquée par la plateforme. Un même utilisateur ne peut pas exécuter des actions incompatibles, comme approuver un prêt et enregistrer le déboursement, sauf si votre organisation configure explicitement une exception.
+</Warning>
+
+## Sujets connexes
+
+- [Sécurité et architecture](/fr-ca/admin/security-and-architecture)
+- [Vue d'ensemble de la plateforme](/fr-ca/get-started/platform-overview)
